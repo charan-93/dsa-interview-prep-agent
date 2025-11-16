@@ -111,6 +111,24 @@ pip install google-genai
 ```
 
 ### Environment Setup
+
+#### 1. Enable Gemini API in Google Cloud Console
+
+Before setting up your API key, you must enable the Generative Language API:
+
+1. Go to [Google Cloud Console](https://console.cloud.google.com)
+2. Select your project (or create a new one)
+3. Navigate to **APIs & Services** → **Library** from the left sidebar
+4. Search for "Generative Language API" or "Gemini API"
+5. Click on the API and hit **Enable**
+6. Go to **APIs & Services** → **Credentials** to create or verify your API key
+
+> **Note:** Your API key must have the Generative Language API enabled. If you get "API key not valid" errors, verify that:
+> - The API is enabled for your project
+> - Your API key has no restrictions blocking the Generative Language API
+> - You've waited a few minutes after enabling the API for changes to propagate
+
+#### 2. Set Your API Key
 ```bash
 export GEMINI_API_KEY='your-gemini-api-key-here'
 ```
